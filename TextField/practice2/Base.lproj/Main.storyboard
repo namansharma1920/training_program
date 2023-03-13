@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practice2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uB5-3j-tBF">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldTableViewCell" rowHeight="144" id="zRS-AM-edR" customClass="TextFieldTableViewCell" customModule="practice2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="144"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zRS-AM-edR" id="PIF-FN-y6w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96k-1g-gnx">
+                                                    <rect key="frame" x="57" y="22" width="300" height="36"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="sNn-7A-xyg"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEE-oQ-5Ge">
+                                                    <rect key="frame" x="57" y="66" width="300" height="36"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="ra2-a7-Rdq"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="96k-1g-gnx" firstAttribute="leading" secondItem="PIF-FN-y6w" secondAttribute="leadingMargin" constant="37" id="Clc-Fd-sTc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mEE-oQ-5Ge" secondAttribute="bottom" constant="31" id="FQI-WE-kFl"/>
+                                                <constraint firstItem="mEE-oQ-5Ge" firstAttribute="top" secondItem="96k-1g-gnx" secondAttribute="bottom" constant="8" symbolic="YES" id="K7s-gM-USA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="96k-1g-gnx" secondAttribute="trailing" constant="37" id="VFL-sY-Vhl"/>
+                                                <constraint firstItem="mEE-oQ-5Ge" firstAttribute="leading" secondItem="PIF-FN-y6w" secondAttribute="leadingMargin" constant="37" id="aEq-mb-QZV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mEE-oQ-5Ge" secondAttribute="trailing" constant="37" id="et0-lX-Pp7"/>
+                                                <constraint firstItem="96k-1g-gnx" firstAttribute="top" secondItem="PIF-FN-y6w" secondAttribute="topMargin" constant="11" id="ge9-Lu-VtN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstTextField" destination="96k-1g-gnx" id="B8R-bz-lho"/>
+                                            <outlet property="secondTextField" destination="mEE-oQ-5Ge" id="eqN-Nk-pR9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uB5-3j-tBF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4uh-5B-9iA"/>
+                            <constraint firstItem="uB5-3j-tBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a40-Al-T38"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uB5-3j-tBF" secondAttribute="bottom" id="vcI-TH-Jdx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uB5-3j-tBF" secondAttribute="trailing" id="zAD-SA-G5t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldTableView" destination="uB5-3j-tBF" id="MMh-a7-dMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.289855072463769" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

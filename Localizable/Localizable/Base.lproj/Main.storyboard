@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Localizable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrP-IZ-aPg">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Choose Your Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8D-8z-cgX">
+                                        <rect key="frame" x="43" y="39" width="328" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfU-EB-QLK">
+                                        <rect key="frame" x="0.0" y="598" width="414" height="216"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFS-Rw-ox2">
+                                        <rect key="frame" x="86.5" y="392.5" width="241" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="k8D-8z-cgX" firstAttribute="leading" secondItem="WrP-IZ-aPg" secondAttribute="leading" constant="43" id="Ph4-Xq-i6F"/>
+                                    <constraint firstAttribute="trailing" secondItem="k8D-8z-cgX" secondAttribute="trailing" constant="43" id="S7q-Ge-3MB"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZfU-EB-QLK" secondAttribute="bottom" id="WbI-wB-rwY"/>
+                                    <constraint firstItem="vFS-Rw-ox2" firstAttribute="centerX" secondItem="WrP-IZ-aPg" secondAttribute="centerX" id="ei1-kV-BiT"/>
+                                    <constraint firstItem="k8D-8z-cgX" firstAttribute="top" secondItem="WrP-IZ-aPg" secondAttribute="top" constant="39" id="f1l-ni-pOu"/>
+                                    <constraint firstItem="ZfU-EB-QLK" firstAttribute="leading" secondItem="WrP-IZ-aPg" secondAttribute="leading" id="hFe-EG-VAm"/>
+                                    <constraint firstItem="vFS-Rw-ox2" firstAttribute="centerY" secondItem="WrP-IZ-aPg" secondAttribute="centerY" id="j8G-5Y-ZhM"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZfU-EB-QLK" secondAttribute="trailing" id="wbV-if-XWU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WrP-IZ-aPg" secondAttribute="trailing" id="0l7-dm-Daq"/>
+                            <constraint firstItem="WrP-IZ-aPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Zl-2w-Stc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WrP-IZ-aPg" secondAttribute="bottom" id="BdY-Hc-OeH"/>
+                            <constraint firstItem="WrP-IZ-aPg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="poL-Q7-tH8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="ZfU-EB-QLK" id="HF3-kH-C2T"/>
+                        <outlet property="targetLabel" destination="vFS-Rw-ox2" id="Zi7-ni-YdX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.44927536231884" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
